@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de tarefas</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header><h1>AGENDA DE TAREFAS DIÁRIAS</h1></header>
+    <main>
+      <div class="container">
+        <form>
+          <div class="box-container">
+            <label for="diaSemana">Dia da Semana:</label>
+            <select tabindex="0" id="diaSemana">
+              <option value="0">Escolher um dia</option>
+              <option value="Domingo">Domingo</option>
+              <option value="Segunda">Segunda-feira</option>
+              <option value="Terca">Terça-feira</option>
+              <option value="Quarta">Quarta-feira</option>
+              <option value="Quinta">Quinta-feira</option>
+              <option value="Sexta">Sexta-feira</option>
+              <option value="Sabado">Sábado</option>
+            </select>
+            <label for="inHora">Horário: </label>
+            <input type="time" id="inHora" tabindex="1" />
+            <label for="inTarefa">Tarefa a fazer: </label>
+            <input type="text" id="inTarefa" />
+            <label for="inData">Data do Mês: </label>
+            <input
+              type="date"
+              id="inData"
+              onchange="formatDate(this)"
+              tabindex="3"
+            />
+            <button
+              class="btn-1"
+              tabindex="2"
+              type="button"
+              onclick="addTarefa()"
+            >
+              Adicionar Tarefa
+            </button>
+          </div>
+        </form>
+        <div class="tarefas">
+          <h1>TABELA DE TAREFAS</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Dia da semana</th>
+                <th>Horário</th>
+                <th>Tarefa a fazer</th>
+                <th>Data do Mês</th>
+                <th>Remover tarefa</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+@import url(./reset.css);
+
+body {
+  background-color: #ecf9fe;
+}
+header {
+  background-color: #c7d4d8;
+}
+header h1 {
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 10px;
+  background-color: #d9e6eb;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+.container input,
+select {
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+}
+.box-container label {
+  font-size: 1.2rem;
+}
+.box-container button {
+  height: 40px;
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background-image: linear-gradient(90deg, #ecf9fe, #b4c1c5);
+  cursor: pointer;
+  border: none;
+}
+.box-container button:hover {
+  background-image: linear-gradient(90deg, #c4cfd4, #8c969a);
+}
+table {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+}
+table td {
+  text-align: center;
+  text-align: center;
+}
+table th {
+  height: 30px;
+  font-size: 1.3rem;
+}
+.striped-table th,
+.striped-table td {
+  padding: 8px;
+  text-align: left;
+}
+table tr:nth-child(odd) td {
+  background-color: #d9e6eb;
+}
+table tr:nth-child(even) td {
+  background-color: #ecf9fe;
+}
+table tr,
+td {
+  padding: 5px 0;
+}
+table button {
+  padding: 5px 6px;
+  border-radius: 5px;
+  background-color: #888b8c;
+  color: #dddddd;
+  cursor: pointer;
+  border: none;
+}
+table button:hover {
+  background-color: #c1c1c1;
+  color: #fff;
+}
+.tarefas h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2rem;
+}
